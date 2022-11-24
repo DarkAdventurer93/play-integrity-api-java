@@ -26,4 +26,4 @@ String credentialJsonPath = "<your credential json from google cloud platform>";
 </p>
 在Google Cloud 中选中自己创建的特定的项目如图的(没有需要自己创建，图中是Android-App)
 然后到Service Accounts下，点击右边的ADD KEY按钮创建新key，完成之后会有一份JSON文件
-![img_1.png](img_1.png)
+![image](https://user-images.githubusercontent.com/24764220/203706365-1f542a43-a0c8-4b6b-82b2-6fda5ae8e414.png)
