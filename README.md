@@ -9,7 +9,7 @@ Play Integrity Api的后端代码示例，见Main.java
 Android端代码见https://github.com/HairySnow/play-integrity-api-android
 </p>
 <p>
-需要app端传递的参数有：
+需要app端传递的参数有（已在Android端进行封装，见上面地址的PlayIntegrityHelper类）：
 
 </p>
 <p>
