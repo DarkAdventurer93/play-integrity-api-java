@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'com.hairysnow'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'com.google.apis:google-api-services-playintegrity:v1-rev20220211-1.32.1'
+//    implementation 'com.google.api-client:google-api-client:1.32.1'
+//     https://mvnrepository.com/artifact/com.google.auth/google-auth-library-parent
+//    implementation 'com.google.auth:google-auth-library-java:1.13.0'
+    // https://mvnrepository.com/artifact/com.google.auth/google-auth-library-oauth2-http
+    implementation 'com.google.auth:google-auth-library-oauth2-http:1.13.0'
+
+
+
+}
+
+test {
+    useJUnitPlatform()
+}
