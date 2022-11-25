@@ -51,7 +51,7 @@ public class IntegrityResult {
         this.isMeetsBasicIntegrity = meetsBasicIntegrity;
     }
 
-    public static IntegrityResult failed() {
+    public static IntegrityResult failure() {
         return new IntegrityResult();
     }
 

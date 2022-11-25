@@ -43,11 +43,11 @@ public class PlayIntegrityHelper {
             GoogleCredentials credentials = GoogleCredentials.fromStream(new FileInputStream(credentialJsonPath));
             HttpRequestInitializer requestInitializer = new HttpCredentialsAdapter(credentials);
 
-            HttpTransport HTTP_TRANSPORT = new NetHttpTransport();
-            JsonFactory JSON_FACTORY = new GsonFactory();
+            HttpTransport httpTransport = new NetHttpTransport();
+            JsonFactory jsonFactory = new GsonFactory();
             GoogleClientRequestInitializer playIntegrityRequestInitializer = new PlayIntegrityRequestInitializer();
 
-            PlayIntegrity.Builder playIntegrity = new PlayIntegrity.Builder(HTTP_TRANSPORT, JSON_FACTORY, requestInitializer)
+            PlayIntegrity.Builder playIntegrity = new PlayIntegrity.Builder(httpTransport, jsonFactory, requestInitializer)
                     .setApplicationName(applicationName)
                     .setGoogleClientRequestInitializer(playIntegrityRequestInitializer);
             PlayIntegrity play = playIntegrity.build();
@@ -67,6 +67,6 @@ public class PlayIntegrityHelper {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return IntegrityResult.failed();
+        return IntegrityResult.failure();
     }
 }
